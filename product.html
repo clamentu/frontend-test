@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>My Product Template</title>
+	<link href="./img/favicon.png" rel="icon" type="image/png">
+	<!-- INCLUDE BOOTSTRAP & FONT AWESOME & CUSTOM CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link href="style-product.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<script src="jquery-4.0.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+		<div class="container-fluid navbar-container">
+			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<h3 class="fw-bold brand-title-secondary mb-0">My test Template</h3>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav navbar-text navbar-left me-auto mb-2 mb-lg-0 navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link active pt-0 fs-16" href="index.html">demo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pt-0 fs-16" href="#">shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pt-0 fs-16" href="product.html">product</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pt-0 fs-16" href="#">lookbook</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pt-0 fs-16">blog</a>
+					</li>
+				</ul><span class="navbar-text ms-auto"><a class="me-3" href="#"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></a> <a class="me-3" href="form.html"><i class="fa-regular fa-user fs-16"></i></a> <a class="me-3 position-relative" href="#"><i class="fa-regular fa-heart fs-16"></i> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark d-none" id="wishlist-count">1</span></a> <a class="me-3 position-relative" href="#"><i class="fa-solid fa-cart-shopping fs-16"></i> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark d-none" id="cart-count">1</span></a></span>
+			</div>
+		</div>
+	</nav>
+	<!-- SEZIONE BREADCRUMB -->
+	<section class="section-middle-grey mt-5 my-4 py-3">
+		<div class="container mt-2">
+			<div class="d-flex gap-1">
+				<a class="grey d-block text-decoration-none fs-14" href="index.html">Home</a> <span class="grey fs-14">&gt;</span> <a class="grey d-block text-decoration-none fs-14" href="#">New arrivals</a> <span class="grey fs-14">&gt;</span> <a class="grey d-block text-decoration-none fs-14" href="#">Blush Beanie</a>
+			</div>
+		</div>
+	</section>
+	<section class="section-white">
+		<div class="container">
+			<div class="row my-5 gx-0 gx-md-5">
+				<!-- COLONNA IMMAGINI -->
+				<div class="col-12 col-lg-5 mb-5 mb-md-0">
+					<div class="row">
+						<!-- Thumbnails -->
+						<div class="col-2">
+							<div class="d-flex flex-column gap-2"><img class="img-fluid thumb active" data-bs-slide-to="0" data-bs-target="#mainCarousel" src="./img/img_1.jpg"> <img class="img-fluid thumb" data-bs-slide-to="1" data-bs-target="#mainCarousel" src="./img/img_2.jpg"> <img class="img-fluid thumb" data-bs-slide-to="2" data-bs-target="#mainCarousel" src="./img/img_3.jpg"> <img class="img-fluid thumb" data-bs-slide-to="3" data-bs-target="#mainCarousel" src="./img/img_4.jpg"></div>
+						</div>
+						<!-- Carousel -->
+						<div class="col-10">
+							<div class="carousel slide" data-bs-ride="false" id="mainCarousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active"><img class="d-block w-100" src="./img/img_1.jpg"></div>
+									<div class="carousel-item"><img class="d-block w-100" src="./img/img_2.jpg"></div>
+									<div class="carousel-item"><img class="d-block w-100" src="./img/img_3.jpg"></div>
+									<div class="carousel-item"><img class="d-block w-100" src="./img/img_4.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- COLONNA TESTO SCHEDA PRODOTTO-->
+				<div class="col-lg-7">
+					<h4 class="fw-bold fs-18 mb-4">Blush Beanie</h4>
+					<div class="d-flex justify-content-between">
+						<h3 class="grey fs-20">$15.00</h3>
+						<div class="d-flex gap-2">
+							<p>
+								<i class='fa-solid fa-star star-yellow'></i>
+								<i class='fa-solid fa-star star-yellow'></i>
+								<i class='fa-solid fa-star star-yellow'></i>
+								<i class='fa-solid fa-star star-yellow'></i>
+								<i class='fa-solid fa-star star-yellow'></i></p>
+							<p class="fs-14">(4 reviews)</p>
+						</div>
+					</div>
+					<p class="grey fs-14">Go sport this summer with this vintage navy and white striped v-neck t-shirt<br>
+					from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty<br>
+					vibe.</p>
+					<h6 class="fw-bold fs-14 mt-4">COLOR: <span id="color-name">PINK</span></h6>
+					<div class="d-flex gap-2 mb-3">
+						<div class="circle active pink"></div>
+						<div class="circle grey"></div>
+						<div class="circle black"></div>
+					</div>
+					<h6 class="fw-bold fs-14">SIZE: <span id="size-name">S</span></h6>
+					<div class="d-flex gap-2 mb-4">
+						<div class="circle-size active small grey">
+							S
+						</div>
+						<div class="circle-size medium grey">
+							M
+						</div>
+						<div class="circle-size large grey">
+							L
+						</div>
+					</div>
+					<div class="d-flex mb-0">
+						<div class="quantity-button d-flex justify-content-between gap-4 align-items-center me-1">
+							<div class="quantity-minus">
+								-
+							</div>
+							<div class="quantity-number">
+								1
+							</div>
+							<div class="quantity-plus">
+								+
+							</div>
+						</div><button class="checkout-btn btn btn-dark btn-shop btn-register btn-default fs-14 me-3">ADD TO CART<i class="fa-solid fa-arrow-right"></i></button> <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+					</div>
+					<div class="d-flex justify-content-start gap-3 mb-0 align-items-center">
+						<div><img class="virus-img" src="./img/virus.jpg"></div>
+						<div><img class="virus-img" src="./img/nortonn.png"></div>
+						<div><img class="virus-img" src="./img/verisign.png"></div>
+						<div><img class="virus-img" src="./img/truste.png"></div>
+					</div>
+					<div class="d-flex justify-content-start gap-3 mb-3">
+						<a class="text-decoration-none fw-bold d-inline-block fs-14 text-dark" href="#">Size guide</a> <a class="text-decoration-none fw-bold d-inline-block fs-14 text-dark" href="#">Delivery & Return</a> <a class="text-decoration-none fw-bold d-inline-block fs-14 text-dark" href="#">Ask a Question</a>
+					</div>
+					<p class="grey fs-14">SKU: P15-1</p>
+					<p class="mb-0"><span class="grey mb-1 fs-14">Categories:</span> <span class="fs-14">All, Best seller, Bottom, Dress, New Arrival, Women</span></p>
+					<p><span class="grey mb-1 fs-14">Tags:</span> <span class="fs-14">Color Black, Color Grey, Color Pink, Price $7-$50, Size L, Size M, Size S, Vendor H&M</span></p>
+					<div class="d-flex justify-content-center gap-3 mt-4">
+						<div>
+							<i class="fa-brands fa-facebook text-black"></i>
+						</div>
+						<div>
+							<i class="fa-brands fa-twitter text-black"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-envelope text-black"></i>
+						</div>
+						<div>
+							<i class="fa-brands fa-pinterest text-black"></i>
+						</div>
+						<div>
+							<i class="fa-brands fa-facebook-messenger text-black"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-plus text-black"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-grey">
+		<div class="container">
+			<!-- TABS (PULSANTI) -->
+			<ul class="nav nav-tabs product-tabs justify-content-center mb-4" id="productTabs" role="tablist">
+				<li class="nav-item" role="presentation"><button class="nav-link active fw-bold" data-bs-target="#description" data-bs-toggle="tab" type="button">Description</button></li>
+				<li class="nav-item"><button class="nav-link fw-bold" data-bs-target="#additional" data-bs-toggle="tab">Additional Information</button></li>
+				<li class="nav-item"><button class="nav-link fw-bold" data-bs-target="#shipping" data-bs-toggle="tab">Warranty & Shipping</button></li>
+				<li class="nav-item"><button class="nav-link fw-bold" data-bs-target="#custom" data-bs-toggle="tab">Custom tab</button></li>
+				<li class="nav-item"><button class="nav-link fw-bold" data-bs-target="#reviews" data-bs-toggle="tab">Reviews</button></li>
+			</ul>
+			<!-- TABS (TESTO) -->
+			<div class="tab-content mb-0 mb-md-5">
+				<div class="tab-pane fade show active text-center" id="description">
+					<p class="mx-auto grey fs-14">Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
+				</div>
+				<div class="tab-pane fade text-center" id="additional">
+					<p class="mx-auto grey fs-14">Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
+				</div>
+				<div class="tab-pane fade text-center" id="shipping">
+					<p class="mx-auto grey fs-14">Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
+				</div>
+				<div class="tab-pane fade text-center" id="custom">
+					<p class="mx-auto grey fs-14">Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
+				</div>
+				<div class="tab-pane fade text-center" id="reviews">
+					<p class="mx-auto grey fs-14">Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque. Design inspiration lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
+				</div>
+			</div>
+			<!-- IMMAGINI FUORI DALLE TABS -->
+			<div class="row g-1 g-md-5 mb-5 pt-2 pt-md-5">
+				<div class="col-4"><img alt="" class="img-fluid" src="./img/img_1.jpg"></div>
+				<div class="col-4"><img alt="" class="img-fluid" src="./img/img_2.jpg"></div>
+				<div class="col-4"><img alt="" class="img-fluid" src="./img/img_3.jpg"></div>
+			</div>
+			<!-- SEZIONE IMMAGINE CENTRALE E TESTI + ICONE LATERALI-->
+			<div class="row align-items-center">
+				<!-- CARATTERISTICHE (SX) -->
+				<div class="col-md-3 text-center text-md-start">
+					<div class="d-flex flex-md-column justify-content-around align-items-end gap-4 flex-wrap">
+						<div class="d-flex">
+							<div class="grey text-end fs-14">
+								Rain & Water<br>
+								Resistant
+							</div>
+							<div class="icon-container">
+								<i class="fa-solid fa-cloud-rain fs-30 ms-3"></i>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="grey text-end fs-14">
+								UV Resistant<br>
+								Coating
+							</div>
+							<div class="icon-container">
+								<i class="fa-solid fa-sun fs-30 ms-3"></i>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="grey text-end fs-14">
+								Corrosion Resistance<br>
+								to Sea water
+							</div>
+							<div class="icon-container">
+								<i class="fa-solid fa-water fs-30 ms-3"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- IMMAGINE CENTRALE -->
+				<div class="col-md-6 text-center"><img alt="" class="img-fluid" src="./img/product.png"></div>
+				<!-- CARATTERISTICHE (DX) -->
+				<div class="col-md-3 text-center text-md-start">
+					<div class="d-flex flex-md-column justify-content-around align-items-start gap-4 flex-wrap">
+						<div class="d-flex">
+							<div class="icon-container">
+								<i class="fa-solid fa-leaf fs-30 me-3"></i>
+							</div>
+							<div class="grey text-start fs-14">
+								Lead-free<br>
+								Powdercoat Finish
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="icon-container">
+								<i class="fa-solid fa-droplet fs-30 me-3"></i>
+							</div>
+							<div class="grey text-start fs-14">
+								Resistant to<br>
+								Spills
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="icon-container">
+								<i class="fa-solid fa-recycle fs-30 me-3"></i>
+							</div>
+							<div class="grey text-start fs-14">
+								Recyclable<br>
+								Aluminium Frame
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SEZIONE "You may also like" -->
+	<section class="section-white py-5">
+		<div class="container my-5">
+			<h3 class="text-central-slide text-center fw-bold fs-30">You may also like</h3>
+			<div class="row g-4 mt-4">
+				<!-- 1 -->
+				<div class="col-6 col-md-3">
+					<div class="position-relative">
+						<img class="w-100" src="./img/img_1.jpg">
+						<div class="best-selling-overlay">
+							<a class="btn btn-default text-white">Explore <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="card_info">
+						<h4>Mercury Tee</h4>
+						<p class="grey fs-16">$68.00</p>
+						<div class="d-flex gap-2">
+							<div class="circle-static pink active"></div>
+							<div class="circle-static grey"></div>
+							<div class="circle-static black"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 2 + SCONTO -->
+				<div class="col-6 col-md-3">
+					<div class="position-relative">
+						<img class="w-100" src="./img/img_2.jpg"> <span class="discount-badge orange">-34%</span>
+						<div class="best-selling-overlay">
+							<a class="btn btn-default text-white">Explore <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="card_info">
+						<h4>La Bohème Rose Gold</h4>
+						<p class="grey fs-16"><span class="old-price">$60.00</span> <span class="original-price">$40.00</span></p>
+						<div class="d-flex gap-2">
+							<div class="circle-static pink active"></div>
+							<div class="circle-static grey"></div>
+							<div class="circle-static black"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 3 + SCONTO -->
+				<div class="col-6 col-md-3">
+					<div class="position-relative">
+						<img class="w-100" src="./img/img_3.jpg"> <span class="discount-badge orange">-40%</span>
+						<div class="best-selling-overlay">
+							<a class="btn btn-default text-white">Explore <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="card_info">
+						<h4>Cyan Bohème</h4>
+						<p class="grey fs-16"><span class="old-price">$75.00</span> <span class="original-price">$45.00</span></p>
+						<div class="d-flex gap-2">
+							<div class="circle-static pink active"></div>
+							<div class="circle-static grey"></div>
+							<div class="circle-static black"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="col-6 col-md-3">
+					<div class="position-relative">
+						<img class="w-100" src="./img/img_4.jpg">
+						<div class="best-selling-overlay">
+							<a class="btn btn-default text-white">Explore <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="card_info">
+						<h4>Places High Neck Knitted Sweater</h4>
+						<p class="grey fs-16">$50.00</p>
+						<div class="d-flex gap-2">
+							<div class="circle-static pink active"></div>
+							<div class="circle-static grey"></div>
+							<div class="circle-static black"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER -->
+	<footer>
+		<section class="section-grey fs-14">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h3 class="fw-bold mb-4">My test Template</h3>
+						<div class="d-flex gap-3">
+							<div class="">
+								<i class="grey fa-solid fa-location-dot"></i>
+							</div>
+							<p class="grey">184 Main Rd E, St Albans<br>
+							VIC 3021, Australia</p>
+						</div>
+						<div class="d-flex gap-3">
+							<div class="">
+								<i class="grey fa-solid fa-envelope"></i>
+							</div><a class="grey text-decoration-none mb-3" href="mailto:contact@company.com">contact@company.com</a>
+						</div>
+						<div class="d-flex gap-3">
+							<div class="">
+								<i class="grey fa-solid fa-phone"></i>
+							</div><a class="grey text-decoration-none mb-3" href="tel:+0012233456">+001 2233 456</a>
+						</div>
+						<div class="d-flex gap-4 mt-2">
+							<div>
+								<a href="#"><i class="grey fa-brands fa-facebook"></i></a>
+							</div>
+							<div>
+								<a href="#"><i class="grey fa-brands fa-twitter"></i></a>
+							</div>
+							<div>
+								<a href="#"><i class="grey fa-solid fa-envelope"></i></a>
+							</div>
+							<div>
+								<a href="#"><i class="grey fa-brands fa-telegram"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 mt-5 mt-md-0 col-md-2">
+						<h5 class="fw-bold mb-4 fs-16 mt-2">Categories</h5><a class="grey mb-2 d-block text-decoration-none" href="#">Men</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Women</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Accessories</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Shoes</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Denim</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Dress</a>
+					</div>
+					<div class="col-4 mt-5 mt-md-0 col-md-2">
+						<h5 class="fw-bold mb-4 fs-16 mt-2">Information</h5><a class="grey mb-2 d-block text-decoration-none" href="#">About Us</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Contact Us</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Terms & Conditions</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Returns & Exchanges</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Shipping & Delivery</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Privacy Policy</a>
+					</div>
+					<div class="col-4 mt-5 mt-md-0 col-md-2">
+						<h5 class="fw-bold mb-4 fs-16 mt-2">Useful links</h5><a class="grey mb-2 d-block text-decoration-none" href="#">Store Location</a> <a class="grey mb-2 d-block text-decoration-none" href="#">My Account</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Latest News</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Portfolio</a> <a class="grey mb-2 d-block text-decoration-none" href="#">Site Guide</a> <a class="grey mb-2 d-block text-decoration-none" href="#">FAQs</a>
+					</div>
+					<div class="col-md-3 mt-5 mt-md-0">
+						<h5 class="fw-bold mb-4 fs-16 mt-2">Instagram</h5>
+						<div class="row g-1 image-grid">
+							<div class="col-4"><img class="w-100" src="./img/home-slide.jpg"></div>
+							<div class="col-4"><img class="w-100" src="./img/kozmophone.png"></div>
+							<div class="col-4"><img class="w-100" src="./img/pi-phones.jpg"></div>
+							<div class="col-4"><img class="w-100" src="./img/poilu.png"></div>
+							<div class="col-4"><img class="w-100" src="./img/new-arrivals.jpg"></div>
+							<div class="col-4"><img class="w-100" src="./img/lightin-collections.jpg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center py-3 flex-column flex-md-row">
+					<p class="fw-bold mb-0 text-copy fs-14">Copyright 2020 - My Test Template</p>
+					<div class="d-flex gap-3">
+						<a class="grey d-block text-decoration-none fs-14" href="#">Shop</a> <a class="grey d-block text-decoration-none fs-14" href="#">About Us</a> <a class="grey d-block text-decoration-none fs-14" href="#">Contact</a> <a class="grey d-block text-decoration-none fs-14" href="#">Blog</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<!-- INCLUDE BOOTSTRAP JS + CUSTOM JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+	<script src="custom-product.js"></script>
+</body>
+</html>

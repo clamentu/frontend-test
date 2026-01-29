@@ -1,0 +1,157 @@
+.rd-0 {
+	border-radius: 0 !important;
+}
+
+.container-form {
+	padding: 24px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+	min-height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container-img-form {
+	display: flex;
+	align-items: stretch;
+	padding: 0;
+}
+
+.container-img-form img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/***********************************/
+/*** INPUT GROUP                 ***/
+/***********************************/
+.input-group {
+	border: 1px solid #ced4da;
+	border-radius: 0;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+	border: 0;
+}
+
+.input-group-text.icon-validate {
+	background-color: #fff;
+}
+
+
+.input-group.is-valid {
+	border-color: #27ae60;
+}
+
+.input-group.is-invalid {
+	border-color: #dc3545;
+}
+
+/***********************************/
+/*** ICONS                       ***/
+/***********************************/
+.fa-check.text-success {
+	color: #27ae60 !important;
+}
+
+button.swal2-confirm.swal2-styled {
+	border-radius: 0 !important;
+	background: #000;
+	padding: 10px 24px;
+	font-weight: bold;
+}
+
+h2#swal2-title {
+	font-size: 20px !important;
+	color: #000;
+}
+
+div#swal2-html-container {
+	font-size: 14px !important;
+	color: #000;
+}
+
+#passwordChecklist li.valid {
+	color: green;
+	text-decoration: line-through;
+}
+
+.section-middle-grey {
+	background-color: #f2f2f4;
+}
+
+.navbar-left {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.img-form {
+	width: 95%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/******************/
+/*** RESPONSIVE ***/
+/******************/
+@media (max-width: 991.98px) {
+	.navbar-container {
+		display: flex !important;
+		justify-content: flex-start !important;
+		align-items: center;
+	}
+
+	.navbar .d-flex {
+		flex-shrink: 1;
+	}
+
+	.navbar-left {
+		order: 1;
+		width: 100%;
+		margin: 4px;
+		text-align: left;
+		position: static;
+		transform: none;
+		padding-top: 4px;
+	}
+
+	.navbar-left .nav-link {
+		padding: 2px 0;
+		text-align: left;
+	}
+
+	.navbar-text.ms-auto {
+		order: 2;
+		width: 100%;
+		text-align: left;
+		padding: 0;
+	}
+
+	.navbar-toggler {
+		order: 2;
+	}
+
+	.brand-title-secondary {
+		order: 2;
+		margin-left: 20%;
+		margin-bottom: 0;
+		white-space: nowrap;
+		display: flex;
+		align-items: center;
+		font-size: 1.25rem;
+		line-height: 0.8;
+	}
+    img.img-fluid {
+    padding: 24px;
+}
+.container-section-form {
+    margin-top: 0px !important;
+}
+.container-form{
+    box-shadow: none;
+}
+}

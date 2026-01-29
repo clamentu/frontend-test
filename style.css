@@ -1,0 +1,552 @@
+/**********************************/
+/*** FONT                       ***/
+/**********************************/
+@import url("https://db.onlinewebfonts.com/c/ad5be66bb729a1d8400b4449fffdf221?family=Monticello+LT+W01+Italic");
+
+/**********************************/
+/*** RESET + BASE               ***/
+/**********************************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: inherit !important;
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif !important;
+	color: #222;
+	background-color: #fff;
+	line-height: 1.5;
+}
+
+.fs-14 {
+	font-size: 14px !important;
+}
+
+.fs-16 {
+	font-size: 16px !important;
+}
+.fs-18 {
+	font-size: 18px !important;
+}
+
+.fs-20 {
+	font-size: 20px !important;
+}
+
+.fs-60 {
+	font-size: 60px !important;
+}
+
+.fs-24 {
+	font-size: 24px !important;
+}
+
+.fs-30 {
+	font-size: 30px !important;
+}
+
+/**********************************/
+/*** COLORI                     ***/
+/**********************************/
+.orange {
+	background: #FF5307;
+}
+
+.cyan {
+	background: #14D0E1;
+}
+
+.grey {
+	color: #878787;
+}
+.star-yellow {
+	    color: #E5BE37;
+}
+
+/**********************************/
+/*** IMMAGINI                   ***/
+/**********************************/
+.section-eggs-collections {
+	background-image: url("./img/form-egg.jpg");
+}
+
+.section-cymbal-collections {
+	background-image: url("./img/cymbal-pendant.jpg");
+}
+
+.section-chair-collections {
+	background-image: url("./img/chair-wood-legs.jpg");
+}
+
+.section-light-collections {
+	background-image: url("./img/light-oil-lamp.jpeg");
+}
+
+.section-cocktail-collections {
+	background-image: url("./img/line-cocktail-shaker.png");
+}
+
+.section-piep-collections {
+	background-image: url("./img/piep-show.png");
+}
+
+.section-herit-chair-collections {
+	background-image: url("./img/herit-chair.jpg");
+}
+
+.section-lamp-collections {
+	background-image: url("./img/buddy-lamp.jpg");
+}
+
+.section-clock-collections {
+	background-image: url("./img/clock.jpg");
+}
+
+.section-brush-collections {
+	background-image: url("./img/brush.jpg");
+}
+
+.section-thermos-collections {
+	background-image: url("./img/thermos.png");
+}
+
+.section-urkiola-collections {
+	background-image: url("./img/urkiola-bowl.jpg");
+}
+
+.section-lightin-collections {
+	background-image: url("./img/lightin-collections.jpg");
+}
+
+.section-audio-decor {
+	background-image: url("./img/audio-decor.jpg");
+}
+
+.section-new-arrivals {
+	background-image: url("./img/new-arrivals.jpg");
+}
+
+.section-kozmophone-blog {
+	background-image: url("./img/kozmophone.png");
+}
+
+.section-phone-blog {
+	background-image: url("./img/pi-phones.jpg");
+}
+
+.section-poilu-blog {
+	background-image: url("./img/poilu.png");
+}
+
+/**********************************/
+/*** DIVIDER                    ***/
+/**********************************/
+.divider-line {
+	height: 2px;
+	width: 140px;
+	margin: 18px auto;
+	background-color: currentColor;
+	opacity: 1;
+}
+
+/**********************************/
+/*** BUTTONS                    ***/
+/**********************************/
+.btn-default {
+	border: none;
+	font-weight: bold;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.btn-dark.btn-shop {
+	background: #000;
+	border-radius: 0;
+	padding: 10px 24px;
+}
+
+.btn-dark.btn-shop:hover {
+	background: #000;
+}
+
+.btn-default i {
+	font-size: 12px;
+	transition: transform 0.3s ease;
+}
+
+.btn-default:hover i {
+	transform: translateX(4px);
+}
+
+.btn-default-load {
+	border: none;
+	font-weight: bold;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.btn-default-load i {
+	font-size: 12px;
+	transition: transform 0.3s ease;
+}
+
+.btn-default-load:hover i {
+	transform: translateY(4px);
+}
+
+.btn-default-close:hover i {
+	transform: translateY(-4px);
+}
+
+.btn-default-close {
+	border: none;
+	font-weight: bold;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.btn-default-close i {
+	font-size: 12px;
+	transition: transform 0.3s ease;
+}
+
+/**********************************/
+/*** NAVBAR                     ***/
+/**********************************/
+.navbar-text,
+.navbar a {
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-left a {
+	border-bottom: 1px solid transparent;
+	padding-bottom: 2px;
+}
+
+.navbar-left a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.navbar i:hover {
+	color: #000;
+}
+a.nav-link.pt-0.fs-16{
+	cursor: pointer; 
+}
+
+/**********************************/
+/*** HERO SLIDE                 ***/
+/**********************************/
+.full-screen-section {
+	height: 82vh;
+	background: url("./img/home-slide.jpg") center/cover no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.text-central-slide h1 {
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	margin-bottom: 16px;
+	font-weight: 600;
+}
+
+.text-central-secondary {
+	font-family: "Monticello LT W01 Italic";
+	margin-bottom: 24px;
+}
+
+.navbar.scrolled {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+}
+
+.navbar.scrolled .navbar-text a {
+	color: #000 !important;
+}
+
+.navbar.scrolled .text-white {
+	color: #000 !important;
+}
+
+.scrolled .navbar-left a:hover {
+	border-bottom: 1px solid #000;
+}
+
+.brand-title {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.navbar-toggler {
+	padding: 0 !important;
+	border: none !important;
+}
+
+.navbar.scrolled .navbar-toggler .navbar-toggler-icon {
+	filter: brightness(0);
+}
+
+btn:focus,
+a:focus {
+	outline: none;
+}
+
+.navbar-toggler:focus {
+	outline: none !important;
+	box-shadow: none;
+}
+
+/**********************************/
+/*** COLLECTIONS POST SLIDE     ***/
+/**********************************/
+.section-image {
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 12px;
+	height: 250px;
+}
+
+.image-placeholder {
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+}
+
+.image-placeholder.text-right {
+	align-items: flex-start;
+}
+
+.image-placeholder.text-left {
+	align-items: flex-end;
+	margin-top: auto;
+}
+
+/**********************************/
+/*** BEST SELLING               ***/
+/**********************************/
+.section-grey {
+	padding: 80px 0;
+	background-color: #f2f2f4;
+}
+
+.section-image-best-selling {
+	aspect-ratio: 1 / 1;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+}
+
+.best-selling-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.section-image-best-selling:hover .best-selling-overlay {
+	opacity: 1;
+}
+
+.card_info {
+	margin-top: 12px;
+}
+
+.card_info h4 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 16px 0 0;
+	line-height: 1.4;
+}
+
+.old-price {
+	text-decoration: line-through;
+	margin-right: 6px;
+}
+
+.original-price {
+	color: #FF5307;
+}
+
+.discount-badge {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+}
+
+.link-title {
+	text-decoration: none;
+	color: inherit;
+}
+
+.content-load-more {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.8s ease;
+}
+
+/********************/
+/*** BLOG SECTION ***/
+/********************/
+.section-blog {
+	padding: 80px 0;
+}
+
+.blog-info {
+	margin-top: 12px;
+}
+
+.blog-info h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.blog-info p {
+	margin: 4px 0 0;
+}
+
+.section-image-blog {
+	width: 100%;
+	aspect-ratio: 5.5 / 3.5;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+.blog-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.section-image-blog:hover .blog-overlay {
+	opacity: 1;
+}
+
+/**********************************/
+/*** NEWSLETTER                 ***/
+/**********************************/
+.emailaddres-newsletter {
+	border-radius: 0;
+	margin-right: 12px;
+	border: 1px solid #000000;
+}
+
+.emailaddres-newsletter::placeholder {
+	color: #878787;
+	transition: color 0.2s ease;
+	font-size: 13px;
+}
+
+.emailaddres-newsletter:focus::placeholder {
+	color: transparent;
+}
+
+/************************************/
+/*** INFO                         ***/
+/************************************/
+.icona-info {
+	font-size: 28px;
+}
+
+/***************/
+/*** FOOTER ***/
+/***************/
+.image-grid .col-4 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid .col-4 {
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+}
+
+/******************/
+/*** RESPONSIVE ***/
+/******************/
+@media (max-width: 728px) {
+    .navbar-container {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    
+    .navbar-toggler {
+        display: flex;
+        align-items: center; 
+        padding: 0.25rem 0.75rem;
+        margin: 0;             
+    }
+
+    
+    .brand-title {
+        order: 2;
+        margin: 0 15px 0 0;  
+        white-space: nowrap; 
+        display: flex;
+        align-items: center; 
+        font-size: 1.25rem;  
+        line-height: 0.8;    
+    }
+
+    
+    .navbar-collapse {
+        width: 100%;
+        margin-top: 10px;
+        order: 3;
+    }
+}
+
+
+
